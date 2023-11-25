@@ -9,7 +9,7 @@ import (
 	"unicode"
 )
 
-var decodeFlag = flag.Bool("d", false, "-d for decode")
+var decodeFlag = flag.Bool("d", false, "-d decode input")
 
 func invertSubstitution(substitution map[rune]rune) map[rune]rune {
 	inverted := make(map[rune]rune)
